@@ -18,7 +18,6 @@ public class LoginTest extends BaseTest {
     public void loginTest() {
         LoginPage page = new LoginPage(driver);
         String setUrl = "https://wake-up-warrior-staging.web.app/sign-in";
-        String successUrl = "https://wake-up-warrior-staging.web.app/portal/dashboard";
         driver.get(setUrl);
         Assert.assertEquals(page.getUrl(), setUrl);
         page.loginInput("vladimir.istomin@kepler.team");
